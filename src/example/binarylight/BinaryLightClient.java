@@ -24,7 +24,7 @@ public class BinaryLightClient implements Runnable {
         try {
 
             UpnpService upnpService = new UpnpServiceImpl();
-
+            
             // Add a listener for device registration events
             upnpService.getRegistry().addListener(
                     createRegistryListener(upnpService)

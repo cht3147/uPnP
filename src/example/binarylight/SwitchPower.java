@@ -19,6 +19,7 @@ public class SwitchPower {
                           boolean newTargetValue) {
         target = newTargetValue;
         status = newTargetValue;
+        System.out.println("Switch setTarget");
         System.out.println("Switch is: " + status);
     }
 

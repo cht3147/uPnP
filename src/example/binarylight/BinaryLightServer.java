@@ -45,6 +45,8 @@ public class BinaryLightServer implements Runnable {
             upnpService.getRegistry().addDevice(createDevice()
             );
 
+        } catch (IOException e) {
+        	System.out.println("IOException");
         } catch (Exception ex) {
         	ex.printStackTrace();
 //            System.err.println("Exception occured: " + ex);
